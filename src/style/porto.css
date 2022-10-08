@@ -1,0 +1,89 @@
+.porto-sec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 88px;
+  flex-direction: column;
+}
+
+.porto-sec h3 {
+  font-size: 36px;
+  text-align: center;
+  width: 100%;
+  color: white;
+}
+
+.porto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+}
+
+.card {
+  text-align: center;
+  position: relative;
+  width: 300px;
+  height: 420px;
+  background-color: white;
+  margin: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 25px rgb(102, 102, 102);
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card .circle {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  clip-path: circle(180px at center 0);
+  text-align: center;
+  filter: brightness(50%);
+}
+
+.card:nth-child(1) .circle {
+  background: url("./../../assets/porto/porto1.png");
+}
+
+.card:nth-child(2) .circle {
+  background: url("./../../assets/porto/porto2.png");
+}
+
+.card:nth-child(3) .circle {
+  background: url("./../../assets/porto/porto3.png");
+}
+
+.card:nth-child(4) .circle {
+  background: url("./../../assets/porto/porto4.png");
+}
+
+.card .content {
+  position: absolute;
+  bottom: 10px;
+  padding: 20px;
+  page-break-after: 20px;
+}
+
+.card .content p {
+  color: rgb(102, 102, 102);
+}
+
+.card .content a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(90deg, #00dbde, #fc00ff);
+  color: beige;
+  border-radius: 40px;
+  text-decoration: none;
+  margin-top: 20px;
+}

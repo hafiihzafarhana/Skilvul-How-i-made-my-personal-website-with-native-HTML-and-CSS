@@ -1,0 +1,122 @@
+.section-home {
+  margin-left: 100px;
+  margin-top: 10%;
+}
+
+.section-home h1 {
+  font-size: 50px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.section-home span {
+  background: linear-gradient(90deg, #00dbde, #fc00ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-home p {
+  font-size: 22px;
+  color: rgb(102, 102, 102);
+}
+
+.section-home-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blop {
+  right: 120px;
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  background-size: cover;
+  animation: imgblop 5s linear infinite;
+  background: linear-gradient(0deg, #00dbde, #fc00ff);
+}
+
+.images {
+  position: absolute;
+  width: 45%;
+  height: 80%;
+  bottom: 0;
+  right: 100px;
+}
+
+.images .secret {
+  width: 120px;
+  height: 120px;
+  background: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 120px;
+  position: relative;
+  top: 20px;
+  right: -190px;
+  transition: 3s;
+}
+
+.images .secret::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: white;
+  position: absolute;
+  top: 85px;
+  left: 100px;
+  transform: translateX(-50%);
+  opacity: 1;
+}
+
+.images:hover .secret {
+  opacity: 0;
+}
+
+.images img {
+  height: 100%;
+  position: absolute;
+  left: 20%;
+  bottom: 0;
+  transform: translateX(0%);
+  transition: bottom 3s, left 3s;
+}
+
+.images p {
+  position: absolute;
+  color: whitesmoke;
+  bottom: 50%;
+  left: 70%;
+  opacity: 0;
+  transition: 6s;
+  font-size: 24px;
+  font-style: 600;
+}
+
+.images:hover .blop {
+  bottom: 40px;
+}
+
+.images:hover img {
+  left: 0px;
+}
+
+.images:hover p {
+  opacity: 1;
+}
+
+@keyframes imgblop {
+  0%,
+  100% {
+    border-radius: 64% 36% 27% 73% / 55% 58% 42% 45%;
+  }
+  25% {
+    border-radius: 73% 27% 26% 38% / 73% 36% 64% 27%;
+  }
+  50% {
+    border-radius: 28% 72% 44% 56% / 49% 40% 60% 51%;
+  }
+  75% {
+    border-radius: 40% 60% 70% 30% / 47% 62% 38% 53%;
+  }
+}
